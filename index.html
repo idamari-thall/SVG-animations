@@ -11,35 +11,37 @@
 </head>
 
 <body>
+    <a href="pages/animations.html">To animations</a>
+
     <div class="svg-container">
         <div class="svg-container__item easy-wall-clock">
-            <svg width="30" height="30" viewbox="0 0 180 180" xmnls="http://www.w3.org/2000/svg">
+            <svg width="60" height="60" viewbox="0 0 180 180" xmnls="http://www.w3.org/2000/svg">
                 <circle cx="90" cy="90" r="80" fill="black" />
                 <polyline points="55,92 92,92 92,55" stroke="white" stroke-width="16" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
         </div>
-
         <div class="svg-container__item easy-envelope">
-            <svg width="30" heigth="20" viewBox="0 0 300 220">
+            <svg width="60" heigth="40" viewBox="0 0 300 220">
                 <rect x="20" y="20" width="250" height="170" stroke-width="16" stroke="black" stroke-linejoin="round"
                     fill="white" />
                 <polyline points="20,28 145,105 270,28" stroke="black" stroke-width="16" stroke-linejoin="round"
                     fill="white" />
-
             </svg>
         </div>
-
-        <svg>
+        <svg class="svg-container__item medium-credit-card">
             <use xlink:href="images/medium-credit-card.svg#credit-card"></use>
         </svg>
-
-
+        <!--   Varför hamnar kreditkortet i mitten av sidan? Det gjorde den inte när jag hade koden i detta dokument,
+        men när jag la den som en länk istället blev det så. -->
     </div>
 
 </body>
 
 </html>
+
+
+
 
 
 <!-- properties
@@ -48,14 +50,3 @@ stroke-linejoin="round"
 Man kan också använda rx="20" ry="20" på ex. rektanglar
 fill-opacity="0.2" 
 stroke-opacity="0.9" -->
-
-<!-- Create the SVG images provided. Create a minimum of two. 
-At least one SVG should be created in the HTML document and 
-at least one should be created in an SVG document and linked 
-to the HTML document. After creating at least two SVGs, 
-feel free to create more and even make your own! 
-TIP: creating SVGs is a lot easier if you take some time 
-to plan out the design before you start coding. 
-Take some grid paper and plan out the size of your graphic, 
-where the points should be placed, and get an understanding of 
-how each element of the graphic fits together.  -->

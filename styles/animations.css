@@ -1,0 +1,110 @@
+body {
+    background-color: #ffccd5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    color: #c9184a;
+    animation: zoomInDown;
+    animation-duration: 10s;
+    margin: 20px 0px 0px 0px;
+    font-family: 'Zeyada', cursive;
+}
+
+/* Det är en väldigt lång fördröjning innan animationen startar. Går det att ändra? */
+
+p {
+    color: #590d22;
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.container {
+    width: 500px;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #c9184a;
+}
+
+.container__item {
+    width: 110px;
+    height: 80px;
+    margin: 5px;
+    background-color: #ff4d6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div>p {
+    width: 90px;
+    position: absolute;
+    text-align: center;
+    font-family: 'Zeyada', cursive;
+    font-size: 13px;
+    animation: imgZoom 4s ease infinite;
+    /* use keyframes */
+}
+
+@keyframes imgZoom {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1, 1.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.hearts {
+    width: 90px;
+    postion: absolute;
+    z-index: 1;
+}
+
+.hearts:hover {
+    width: 10%;
+    opacity: 0;
+    transition: 3s;
+}
+
+img {
+    width: 90px;
+    position: absolute;
+}
+
+a {
+    width: 60px;
+    height: 15px;
+    background-color: #ff4d6d;
+    color: #590d22;
+    border-radius: 2px;
+    border: #ff4d6d solid 1px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 1s;
+}
+
+a:hover {
+    background-color: antiquewhite;
+    font-size: 10px;
+    transition-delay: 0.2s;
+}
+
+/* Jag vet att den här sidan inte alls fungerar om man gör skärmen mindre.
+Hade inte så mkt tid den här gången så priotierade bort det.  */
